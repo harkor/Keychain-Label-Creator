@@ -59,15 +59,14 @@ export const createLabel = async (
   const fontSize = 12;
   const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
 
-  // Fonction pour diviser le texte en plusieurs lignes
-
+  // Divide text into lines that fit within the width of the label
   const wrappedText = wrapText(text, size.inner.width, fontSize, font);
 
-  // Calcul de la hauteur totale des lignes de texte
+  // Compute total height of the text
   const lineHeight = fontSize * 1.2; // ajustez ce facteur selon vos préférences
   const totalTextHeight = lineHeight * wrappedText.length;
 
-  // Calcul de la position Y de la première ligne pour centrer verticalement
+  // Compute the starting position of the text
   const textYStart =
     y +
     (size.height - size.inner.height) / 2 +
@@ -75,7 +74,7 @@ export const createLabel = async (
     totalTextHeight -
     fontSize;
 
-  // Dessin du texte ligne par ligne
+  // Draw each line of text
   wrappedText.forEach((line, index) => {
     const textX =
       x +
