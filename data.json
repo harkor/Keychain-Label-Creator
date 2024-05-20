@@ -1,0 +1,29 @@
+{
+  "debug": false,
+  "start": {
+    "x": 20,
+    "y": 40
+  },
+  "itemsPerRow": 7,
+  "spacing": 5,
+  "size": {
+    "width": 32,
+    "height": 19,
+    "inner": {
+      "width": 27,
+      "height": 13
+    }
+  },
+  "labels": [
+    "Boîte aux lettres",
+    "Boîte aux lettres",
+    "Garage",
+    "Garage",
+    "Barrière Jardin 1",
+    "Barrière Jardin 2",
+    "Garage",
+    "Garage",
+    "Barrière Jardin 1",
+    "Barrière Jardin 2"
+  ]
+}
