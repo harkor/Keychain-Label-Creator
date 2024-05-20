@@ -45,7 +45,7 @@ The settings for the keychain label creation are defined in the data.json file. 
   "labels": [
     "Label 1",
     "Label 2",
-    ...
+    "Label 3"
   ]
 }
 ```
